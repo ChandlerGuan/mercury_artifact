@@ -68,3 +68,24 @@ The Mercury codebase is organized into the following main folders:
 - `utils/`: Common helper functions and DSL examples.
 - `tests/`: Unit tests for verifying correctness.
 - `example.py`: An end-to-end demo using Mercury.
+
+# Other Q&A
+
+## Docker hub login
+
+Since we are using a base docker image provided by Nvidia, you need to sign in to the Nvidia docker hub before building the image.
+To do this:
+
+1. Create a free NVIDIA NGC account at https://ngc.nvidia.com/signup if you don't have one.
+2. Get your NGC API key from https://ngc.nvidia.com/setup/api-key.
+3. Log in to the NGC registry using Docker (replace <your_api_key> with your actual key):
+
+```
+docker login nvcr.io -u '$oauthtoken' -p <your_api_key>
+```
+
+4. Re-run the docker build command:
+
+```
+docker build -t mercury_artifact .
+```
