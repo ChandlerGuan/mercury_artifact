@@ -1,3 +1,5 @@
+# Copyright (c) 2025 PICASSO LAB, Licensed under the MIT License.
+
 from typing import List, Optional
 import torch
 

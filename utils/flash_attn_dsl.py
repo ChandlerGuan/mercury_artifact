@@ -1,3 +1,5 @@
+# Copyright (c) 2025 PICASSO LAB, Licensed under the MIT License.
+
 import torch
 import torch.distributed as dist
 from mercury.ir.elements import Axis, grid, match_buffer, load_buffer, store_buffer# , reduce

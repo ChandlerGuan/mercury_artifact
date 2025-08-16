@@ -1,4 +1,4 @@
-
+# Copyright (c) 2025 PICASSO LAB, Licensed under the MIT License.
 
 from mercury.ir.distributed import DeviceMesh, ShardType, ShardingSpec
 from mercury.ir.nodes import Program

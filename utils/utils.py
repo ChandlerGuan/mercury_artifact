@@ -1,3 +1,7 @@
+# The content of this file is licensed under the MIT License.
+# Copyright (c) 2024 Zilin Zhu
+# https://github.com/zhuzilin/ring-flash-attention
+
 import random
 
 import torch

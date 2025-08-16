@@ -1,3 +1,5 @@
+# Copyright (c) 2025 PICASSO LAB, Licensed under the MIT License.
+
 """ in this file we dump the critical information of the search result ir """
 
 from mercury.ir.nodes import BufferLoad, BufferStore, Program

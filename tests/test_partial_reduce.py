@@ -1,3 +1,5 @@
+# Copyright (c) 2025 PICASSO LAB, Licensed under the MIT License.
+
 import torch.distributed as dist
 from mercury.backend.pytorch.utils import get_device_group, one_dim_to_n_dim
 

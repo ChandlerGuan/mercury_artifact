@@ -1,3 +1,5 @@
+# Copyright (c) 2025 PICASSO LAB, Licensed under the MIT License.
+
 """ estimate the transfer time of one shard to another shard """
 
 import os

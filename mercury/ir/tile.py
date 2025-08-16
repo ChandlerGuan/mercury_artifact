@@ -1,3 +1,5 @@
+# Copyright (c) 2025 PICASSO LAB, Licensed under the MIT License.
+
 """ Split one entire axis into multiple axis """
 
 from mercury.ir.elements import Axis

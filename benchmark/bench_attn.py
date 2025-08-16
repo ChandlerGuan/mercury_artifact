@@ -1,3 +1,5 @@
+# Copyright (c) 2025 PICASSO LAB, Licensed under the MIT License.
+
 import ast
 import textwrap
 from flash_attn.flash_attn_interface import _flash_attn_forward

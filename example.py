@@ -1,3 +1,5 @@
+# Copyright (c) 2025 PICASSO LAB, Licensed under the MIT License.
+
 from mercury.frontend.parser import IRBuilder
 from mercury.ir.init_distributed import init_distributed
 from mercury.backend import *

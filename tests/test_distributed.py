@@ -1,3 +1,5 @@
+# Copyright (c) 2025 PICASSO LAB, Licensed under the MIT License.
+
 import pytest
 import torch
 from mercury.ir.distributed import DeviceMesh, ShardingSpec, ShardType

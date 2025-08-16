@@ -1,3 +1,5 @@
+# Copyright (c) 2025 PICASSO LAB, Licensed under the MIT License.
+
 import unittest
 import copy
 from mercury.ir.nodes import IRNode, Program, GridLoop, RingComm, PyNode, BufferStore, BufferLoad, AxisDef

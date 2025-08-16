@@ -1,3 +1,5 @@
+# Copyright (c) 2025 PICASSO LAB, Licensed under the MIT License.
+
 import torch
 import torch.distributed as dist
 def add_collective(tensor, op, group, dst=None):

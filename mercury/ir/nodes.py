@@ -1,3 +1,5 @@
+# Copyright (c) 2025 PICASSO LAB, Licensed under the MIT License.
+
 """
 IR nodes for representing computation in auto-ring compiler.
 """

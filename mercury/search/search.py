@@ -1,3 +1,5 @@
+# Copyright (c) 2025 PICASSO LAB, Licensed under the MIT License.
+
 import copy
 import itertools
 from mercury.ir.primitives import parallelize, shift

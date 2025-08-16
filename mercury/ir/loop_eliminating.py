@@ -1,3 +1,5 @@
+# Copyright (c) 2025 PICASSO LAB, Licensed under the MIT License.
+
 """
 Loop elimination pass that removes GridLoops containing optional axes.
 """
