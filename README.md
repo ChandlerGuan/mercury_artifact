@@ -102,13 +102,9 @@ You can extend this example by:
 
 # 7. License
 
-This project is licensed under the MIT License. Please see the [`LICENSE`](LICENSE:1) file for details. We welcome the community to use, compare, and extend this artifact for research purposes.
+This project is licensed under the MIT License. Please see the [`LICENSE`](LICENSE) file for details. We welcome the community to use, compare, and extend this artifact for research purposes.
 
-# 8. Artifact Storage
-
-This artifact is planned to be uploaded to Zenodo for long-term archival.
-
-# 9. Other Q&A
+# 8. Other Q&A
 
 ## Docker hub login
 
