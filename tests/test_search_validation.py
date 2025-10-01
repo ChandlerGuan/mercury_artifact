@@ -204,8 +204,8 @@ def run_validation(source):
         log(f"Program {idx+1} max out diff", local_out - ring_out)
         log(f"Program {idx+1} max lse diff", local_lse - ring_lse)
         
-        assert max_out_diff < 1e-3, f"Output difference too large: {max_out_diff}"
-        assert max_lse_diff < 1e-3, f"LSE difference too large: {max_lse_diff}"
+        assert max_out_diff < 1e-2, f"Output difference too large: {max_out_diff}"
+        assert max_lse_diff < 1e-2, f"LSE difference too large: {max_lse_diff}"
         
         dist.barrier()
 

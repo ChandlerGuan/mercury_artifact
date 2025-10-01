@@ -50,27 +50,33 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 torchrun --nnodes=1 --nproc_per_node=8 ./ex
 This example parallelizes an attention kernel to multiple GPUs and applies a pre-defined ring-attention style communication transformation schedule.
 
 ### Expected Output
-The script will first print the generated PyTorch code for the parallelized attention kernel. Then, it will execute the code. A successful run will complete without any errors and the output diff aganist the single node flash attention should be relatively small.
+The script will first print the generated PyTorch code for the parallelized attention kernel. Then, it will execute the code. A successful run will complete without any errors and the output diff against the single node flash attention should be relatively small.
 
-## 4.3. Unit tests
+## 4.3. Tests
 
-We provide a set of unit tests to verify the correctness of different components of the Mercury compiler.
-We highlight several important unit tests that can be run as follows.
+We provide a set of tests to verify the correctness of different components of the Mercury compiler.
+We highlight several important tests that can be run as follows.
 
-To validate the correctness of the CommIR transformation in the enumerated search space, run the validation unit test:
+### 4.3.1. Search Process Demonstration
 
+This script runs a search to demonstrate the end-to-end functionality. Its primary purpose is to showcase how the search is performed and what the output looks like.
+
+```shell
+python tests/test_search.py
 ```
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 torchrun --nnodes=1  --nproc_per_node=8 tests/test_search_validation.py
-```
 
-To run the actual search process, you can execute the following unit test. Note that this is a test run with a small search space to demonstrate the search process. In practice, you can use a larger search space for better performance.
+### 4.3.2. Search Space Correctness Validation
 
-```
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 torchrun --nnodes=1  --nproc_per_node=8 tests/test_search_gemm.py
+This script is a more rigorous test designed to validate the numerical correctness of the compiler's transformations. It explores the search space and verifies that the generated code produces results that are numerically equivalent to a baseline implementation. This ensures the integrity of the optimization logic.
+
+This validation process requires compiling and executing across several GPUs, and is therefore launched with `torchrun`.
+
+```shell
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 torchrun --nnodes=1 --nproc_per_node=8 tests/test_search_validation.py
 ```
 
 ### Expected Output
-For all unit tests, a successful execution will run a series of checks and exit without stating any errors.
+For all tests, a successful execution will run a series of checks and exit without stating any errors.
 
 # 5. Code Structure
 
